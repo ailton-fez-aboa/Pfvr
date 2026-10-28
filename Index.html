@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por favor...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            user-select: none;
+        }
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 2rem;
+            line-height: 1.3;
+        }
+        @keyframes pulseSoft {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .emoji {
+            font-size: clamp(5rem, 15vw, 9rem);
+            animation: pulseSoft 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>tente a foto por favor amor...</h1>
+        <div class="emoji">🫤</div>
+    </main>
+
+</body>
+</html>
